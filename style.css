@@ -389,14 +389,15 @@ a:focus,
 .mu-navbar-nav li a {
 	color: #fefeff;
 	display: block;
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 12px;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding: 9px 18px;
 	border-radius: 15px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+	font-family: "Century Gothic";
 }
 
 
