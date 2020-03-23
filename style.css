@@ -392,8 +392,8 @@ a:focus,
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: 9px 18px;
-	border-radius: 15px;
+	padding: 5px 10px;
+	border-radius: 10px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
