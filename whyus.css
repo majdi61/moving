@@ -28,13 +28,17 @@ body {
   color: #fff; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Century Gothic";
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
   color: rgb(255, 255, 255); }
 
-
+.svg{
+ max-width: 55% ;
+ 
+}
+.icon { text-align: center;}
    .section-whyus {
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom, #1f304a86,#1f304a86),url(WEB-03.png);
@@ -48,8 +52,7 @@ margin-top: 5rem;
       .section-whyus {
         padding: 25rem 0 15rem 0; } }
   
-  
-  
+    
    .row {
     max-width: 114rem;
     margin: 0 auto; }
@@ -69,11 +72,11 @@ margin-top: 5rem;
     .row [class^="col-"] {
       float: left; }
       .row [class^="col-"]:not(:last-child) {
-        margin-right: 6rem; }
+        margin-right: 5rem; }
         @media only screen and (max-width: 56.25em) {
           .row [class^="col-"]:not(:last-child) {
             margin-right: 0;
-            margin-bottom: 6rem; } }
+            margin-bottom: 15rem; } }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"] {
           width: 100% !important; } }
@@ -102,18 +105,7 @@ margin-top: 5rem;
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       transition: transform .3s; }
-      @media only screen and (max-width: 56.25em) {
-        .feature-box {
-          padding: 2rem; } }
-      .feature-box__icon {
-        font-size: 6rem;
-        margin-bottom: .5rem;
-        display: inline-block;
-        background-image: linear-gradient(to right, #7ed56f, #28b485);
-        -webkit-background-clip: text;
-        color: transparent; }
-        @media only screen and (max-width: 56.25em) {
-          .feature-box__icon {
-            margin-bottom: 0; } }
+
         
+            
       
