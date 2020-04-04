@@ -1,0 +1,95 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
+
+body {
+  font-family: "Century Gothic";
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: rgb(255, 255, 255); }
+
+   .section-services {
+   
+    background-image: url("assets/images/WEB-09.png");
+    background-position: center;
+    margin-top: 10rem;
+    height: 100vh;
+  background-size: cover;
+  
+ }
+
+       
+ .feature__text-box {
+    position: relative;
+    top: 7%;
+    text-align: center; }
+    .feature__text-box-primar{
+        color: #F5B131;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+       
+          display: block;
+          font-size: 5.7rem;
+          font-weight: 400;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        max-width: 114rem;
+        margin: 130px auto; }
+        .row:not(:last-child) {
+          margin-bottom: 3.5rem; }
+          @media only screen and (max-width: 56.25em) {
+            .row:not(:last-child) {
+              margin-bottom: 6rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .row {
+            max-width: 90rem;
+            padding: 0 2rem; } }
+        .row::after {
+          content: "";
+          display: table;
+          clear: both; }
+        .row [class^="col-"] {
+          float: left; }
+          
+          .row [class^="col-"]:not(:last-child) {
+            margin-right: 3rem; }
+            @media only screen and (max-width: 56.25em) {
+              .row [class^="col-"]:not(:last-child) {
+                margin-right: 9;
+                margin-bottom: 15rem;
+               } }
+          @media only screen and (max-width: 56.25em) {
+            .row [class^="col-"] {
+              width: 100% !important; } }
+                .row .col-5-of-5 {
+                  width: calc((100% - 1 * 6rem) / 5 ) ; }
+                  
+            
