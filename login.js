@@ -1,14 +1,3 @@
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      document.getElementById("connect").style.display ="block"
-      document.getElementById("connected").style.display ="none"
-
-    } else {
-        document.getElementById("connect").style.display ="none"
-        document.getElementById("connected").style.display ="block"
-  
-    }
-  });
 
 
 
@@ -37,8 +26,8 @@ function login () {
 function signup() {
 
 
-    var userEmail= document.getElementById ("email_field").value ;
-    var userPassword= document.getElementById ("password_field").value ;
+    var userEmail= document.getElementById ("email").value ;
+    var userPassword= document.getElementById ("password").value ;
    
     firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
         // Handle Errors here.
@@ -55,12 +44,17 @@ function signup() {
       
    }
 
-   
+   var messagesRef = firebase.database().ref('User');
 function signup() {
 
 
-    var userEmail= document.getElementById ("email_field").value ;
-    var userPassword= document.getElementById ("password_field").value ;
+    var firstname= document.getElementById("First-Name").value;
+    var lastname= document.getElementById("Last-Name").value;
+    var phone= document.getElementById("phone").value;
+    var userEmail= document.getElementById ("email").value ;
+    var userPassword= document.getElementById ("password").value ;
+
+    saveMessage(firstname, lastname, phone, userEmail, userPassword);
    
     firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
         // Handle Errors here.
@@ -68,6 +62,19 @@ function signup() {
         var errorMessage = error.message;
         // ...
       });
+
+
+      function saveMessage(firstname, lastname, phone, userEmail, userPassword){
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+          name: firstname,
+          company:lastname,
+          email:email,
+          phone:phone,
+          message:userEmail,
+          userPassword:userPassword,
+        });
+      }
    
    
    
