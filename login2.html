@@ -71,8 +71,8 @@
 		</div>
 	</header>
 
-	<div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-04.png');padding-bottom: 10px ;">
-		<div class="huskermovers" style=" text-align: center;z-index: 50;float: left;position: relative;width: 25%; height:85vh;background-color: 	rgb(245,245,245,0.2) ; left: 60%; ">
+	<div class="hero-image">
+		<div class="huskermovers">
         
       
       <div class="container-contact100">
@@ -149,8 +149,14 @@
 
   <style>
 
+html,body { height:100%; }
+
 .hero-image {
-	float: left;
+  display: inline-block; 
+   background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-04.png');
+   
+	
+
 	z-index: -1;
   
   background-color: #cccccc;
@@ -158,10 +164,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
+  height: 100%;
   width: 100%;
 }
 
+.huskermovers {
+  text-align: center;
+  z-index: 50;float: left;
+  position: relative;
+  width: 25%; 
+  height:100%;
+  background-color: 	rgb(245,245,245,0.2)
+   ; left: 60%;
+
+
+}
 
 
 input {
