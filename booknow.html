@@ -87,49 +87,49 @@
           <form class="contact100-form validate-form">
             
             
-            <div class="wrap-input100 validate-input"style="width: 47%; margin-left:1%; margin-right: 1%;">
-              <input class="input100" type="date" name="phone" placeholder="Moving Date" style="padding-right: 15px;">
+            <div class="wrap-input100 validate-input"style="width: 47%; margin-left:1%; margin-right: 1%;" >
+              <input class="input100" type="date" name="phone" placeholder="Moving Date" style="padding-right: 15px;" id="date">
               <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-              <input class="input100" type="text" name="phone" placeholder="Sizes">
+              <input class="input100" type="text" name="phone" placeholder="Sizes" id="sizes">
               <span class="focus-input100"></span>
             </div>
     
             <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-              <input class="input100" type="text" name="name" placeholder="First Name">
+              <input class="input100" type="text" name="name" placeholder="First Name" id="firstname">
               <span class="focus-input100"></span>
             </div>
     
             <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;">
-              <input class="input100" type="text" name="email" placeholder="Last Name">
+              <input class="input100" type="text" name="email" placeholder="Last Name" id="lastname">
               <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 validate-input"  >
-              <input class="input100" type="text" name="phone" placeholder="Origin Aderess/ Postal Code">
+              <input class="input100" type="text" name="phone" placeholder="Origin Adress/ Postal Code" id="origin-adress">
               <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 validate-input" >
-              <input class="input100" type="text" name="phone" placeholder="Destination Adress / Zip Code">
+              <input class="input100" type="text" name="phone" placeholder="Destination Adress / Zip Code" id="destination-adress">
               <span class="focus-input100"></span>
             </div>
     
             <div class="wrap-input100 validate-input"  style="width: 47%; margin-left:1%; margin-right: 1%;  ">
-              <input class="input100" type="text" name="phone" placeholder="Phone Number">
+              <input class="input100" type="text" name="phone" placeholder="Phone Number" id="phone">
               <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 validate-input"  style="width: 47%; margin-left:1%; margin-right: 1%;">
-              <input class="input100" type="text" name="phone" placeholder="Email">
+              <input class="input100" type="text" name="phone" placeholder="Email" id="email">
               <span class="focus-input100"></span>
             </div>
     
             <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
-              <textarea class="input100" name="message" placeholder="Description"></textarea>
+              <textarea class="input100" name="message" placeholder="Description" id="description"></textarea>
               <span class="focus-input100"></span>
             </div>
     
             <div class="container-contact100-form-btn">
-              <button class="contact100-form-btn" type="button">
+              <button class="contact100-form-btn" type="button" onclick="booknow()">
                 <span style="font-weight: bold; font-family: Century Gothic ;">
                  
                   Get Estimate Now
@@ -178,7 +178,37 @@
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
-	<!-- About us Skills Circle progress  -->
+  <!-- About us Skills Circle progress  -->
+  
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+       <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+  
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBTdEuuuWkIkI-MrU6GtP3g8JK3aBlOELY",
+      authDomain: "huskie-532c0.firebaseapp.com",
+      databaseURL: "https://huskie-532c0.firebaseio.com",
+      projectId: "huskie-532c0",
+      storageBucket: "huskie-532c0.appspot.com",
+      messagingSenderId: "221185319405",
+      appId: "1:221185319405:web:c55d7513ca69c8e19887e4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+  <script src="login.js"></script>
 	
     
   </body>

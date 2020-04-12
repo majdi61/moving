@@ -67,12 +67,54 @@ function signup() {
       function saveMessage(firstname, lastname, phone, userEmail, userPassword){
         var newMessageRef = messagesRef.push();
         newMessageRef.set({
-          name: firstname,
-          company:lastname,
+          firstname: firstname,
+          lastname:lastname,
           email:email,
           phone:phone,
           message:userEmail,
           userPassword:userPassword,
+        });
+      }
+   
+   
+   
+   
+      
+   }
+
+   var messagesRef = firebase.database().ref('booknow');
+   function booknow() {
+
+    var date= document.getElementById("date").value;
+    var sizes= document.getElementById ("sizes").value ;
+
+    var firstnameb= document.getElementById("firstname").value;
+    var lastnameb= document.getElementById("lastname").value;
+    var originadressb= document.getElementById("origin-adress").value;
+    var destinationadressb= document.getElementById("destination-adress").value;
+
+    var phoneb= document.getElementById("phone").value;
+    var userEmailb= document.getElementById ("email").value ;
+    var descriptionb= document.getElementById ("description").value ;
+
+
+    saveMessage(date, sizes, firstnameb, lastnameb, originadressb,destinationadressb,phoneb,userEmailb,descriptionb);
+   
+    
+
+
+      function saveMessage(date, sizes, firstnameb, lastnameb, originadressb,destinationadressb,phoneb,userEmailb,descriptionb){
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+          date: date,
+          sizes:sizes,
+          firstnameb:firstnameb,
+          lastnameb:lastnameb,
+          originadressb:originadressb,
+          destinationadressb:destinationadressb,
+          phoneb: phoneb,
+          userEmailb:userEmailb,
+          descriptionb:descriptionb,
         });
       }
    
