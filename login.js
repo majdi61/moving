@@ -123,3 +123,37 @@ function signup() {
    
       
    }
+
+   var messagesRef = firebase.database().ref('contactus');
+   function contact() {
+
+
+    var fullname= document.getElementById("fullname").value;
+    var how= document.getElementById("how").value;
+
+    var phoneb= document.getElementById("phone").value;
+    var userEmailb= document.getElementById ("email").value ;
+    var message= document.getElementById ("message").value ;
+
+
+    saveMessage(fullname, how,phoneb,userEmailb,message);
+   
+    
+
+
+      function saveMessage( fullname, how, phoneb,userEmailb,message){
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+          fullname: fullname,
+          how_did_your_hear_about_us:how,
+          userEmailb:userEmailb,
+          phoneb: phoneb,
+          message:message,
+        });
+      }
+   
+      document.getElementById('myform').reset();
+   
+   
+      
+   }

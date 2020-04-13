@@ -163,26 +163,26 @@
           <div class="container-contact100">
     
             <div class="wrap-contact100">
-              <form class="contact100-form validate-form">
+              <form class="contact100-form validate-form" id='myform'>
                 
                 
             
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your phone" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-                  <input class="input100" type="text" name="phone" placeholder="Full ,Name">
+                  <input class="input100" type="text" name="phone" placeholder="Full Name" id="fullname">
                   <span class="focus-input100">test</span>
                 </div>
         
                 <div class="wrap-input100 validate-input" data-validate="Please enter your name" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-                  <input class="input100" type="text" name="name" placeholder="How Did You Hear About Us ?">
+                  <input class="input100" type="text" name="name" placeholder="How Did You Hear About Us ?" id="how">
                   <span class="focus-input100"></span>
                 </div>
         
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x" style="width: 47%; margin-left:1%; margin-right: 1%;">
-                  <input class="input100" type="text" name="email" placeholder="Number Phone">
+                  <input class="input100" type="text" name="email" placeholder="Number Phone" id="phone">
                   <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your phone" style="width: 47%; margin-left:1%; margin-right: 1%;">
-                  <input class="input100" type="text" name="phone" placeholder="Email">
+                  <input class="input100" type="text" name="phone" placeholder="Email" id="email">
                   <span class="focus-input100"></span>
                 </div>
                
@@ -191,12 +191,12 @@
                
         
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
-                  <textarea class="input100" name="message" placeholder="Message"></textarea>
+                  <textarea class="input100" name="message" placeholder="Message" id="message"></textarea>
                   <span class="focus-input100"></span>
                 </div>
         
                 <div class="container-contact100-form-btn">
-                  <button class="contact100-form-btn">
+                  <button class="contact100-form-btn" type="button" onclick="contact()">
                     <span style="font-weight: bold; font-family: Century Gothic ;">
                      
                       SUBMIT
@@ -251,7 +251,31 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
 	<!-- About us Skills Circle progress  -->
-	
+  
+  
+
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBTdEuuuWkIkI-MrU6GtP3g8JK3aBlOELY",
+    authDomain: "huskie-532c0.firebaseapp.com",
+    databaseURL: "https://huskie-532c0.firebaseio.com",
+    projectId: "huskie-532c0",
+    storageBucket: "huskie-532c0.appspot.com",
+    messagingSenderId: "221185319405",
+    appId: "1:221185319405:web:c55d7513ca69c8e19887e4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="login.js"></script>
     
   </body>
 
