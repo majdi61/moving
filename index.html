@@ -33,9 +33,7 @@
   <body>
 
    <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
+   
   <!-- END SCROLL TOP BUTTON -->
   	
   	<!-- Start Header -->
@@ -70,7 +68,7 @@
 		</div>
 	</header>
 
-	<div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-01.jpg');padding-bottom: 10px ;">
+	<div class="hero-image" >
   
     <div class="huskermovers"> 
     
@@ -153,6 +151,7 @@
 
 
 
+  
 
 
 
@@ -211,10 +210,28 @@
 </script>
 
 <script src="login.js"></script>
+
+
+
+<div class="content">
+  <img src="https://picsum.photos/300/300/?random" />
+</div>
+<div class="loader-wrapper">
+  <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
+</script>
+
     
+
+
   </body>
 
   <style>
+ 
 
     html,body {
       height: 100%;
@@ -231,6 +248,9 @@
   background-size: cover;
   
   width: 100%;
+  display: inline-block;
+  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-01.jpg');
+  padding-bottom: 10px ;
 }
 
 
@@ -251,6 +271,7 @@
      height:100%;
      background-color: 	rgb(245,245,245,0.1) ;
 }
+
 
 
 
@@ -329,7 +350,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10%;
   position: relative;
   background-color:transparent;
 }
