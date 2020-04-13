@@ -33,11 +33,11 @@
 	</head>       
   <body>
 
-   <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
-  <!-- END SCROLL TOP BUTTON -->
+   <!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
+   <div class="loader">
+    <img src="assets/images/load.gif" alt="Loading..." />
+</div>
+    <!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
   	
   	<!-- Start Header -->
 	<header id="mu-hero" style="display: block;">
@@ -200,7 +200,7 @@
     
 
     <button  style="
-    z-index: 9999;
+    z-index: 50;
     left: 50%;
    bottom: 10em;
     
@@ -223,6 +223,13 @@
 
 
 
+
+  <script>
+    window.addEventListener("load", function () {
+     const loader = document.querySelector(".loader");
+     loader.className += " hidden"; // class "loader hidden"
+   });
+   </script>
 
 
 

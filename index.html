@@ -26,9 +26,11 @@
  
 	</head>       
   <body>
-
-   
-  	
+	<!-- Loadeeeeeeeeeeeeeeer -->
+    <div class="loader">
+      <img src="assets/images/load.gif" alt="Loading..." />
+  </div>
+  		<!-- Loadeeeeeeeeeeeeeeer -->
   	<!-- Start Header -->
 	<header id="mu-hero" style="display: block;">
 		<div class="container">
@@ -146,7 +148,12 @@
   
 
 
-
+<script>
+ window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+});
+</script>
 
 
 

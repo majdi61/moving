@@ -33,11 +33,11 @@
 	</head>       
   <body>
 
-   <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
-  <!-- END SCROLL TOP BUTTON -->
+  <!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
+  <div class="loader">
+    <img src="assets/images/load.gif" alt="Loading..." />
+</div>
+    <!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
   	
   	<!-- Start Header -->
 	<header   id="mu-hero" >
@@ -132,13 +132,12 @@
 
 
 
-	<!-- End Header -->
-
-	<!-- Start slider area -->
-	
-	<!-- End footer -->
-
-	
+  <script>
+    window.addEventListener("load", function () {
+     const loader = document.querySelector(".loader");
+     loader.className += " hidden"; // class "loader hidden"
+   });
+   </script>
 	<!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
