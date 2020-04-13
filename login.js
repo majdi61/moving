@@ -119,8 +119,8 @@ function signup() {
       }
    
    
-   
-   
+      document.getElementById('myform').reset();
+
       
    }
 

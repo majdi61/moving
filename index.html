@@ -14,7 +14,6 @@
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Skills Circle CSS  -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
     
@@ -73,12 +72,7 @@
 
 	<div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-01.jpg');padding-bottom: 10px ;">
   
-    <div class="huskermovers" style="left: 20%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); text-align: center;z-index: 50;float: left; position: relative;width: 30%; height:85vh;background-color: 	rgb(245,245,245,0.1) ; "> 
+    <div class="huskermovers"> 
     
   
   <span style="color: #78de85; font-family: Century Gothic; font-size: 3.8rem; display: block; top : 40%;position: relative; font-weight:500;">  Huskies Movers   </span>
@@ -222,12 +216,16 @@
 
   <style>
 
+    html,body {
+      height: 100%;
+    }
+
 .hero-image {
 	float: left;
 	z-index: -1;
   
   background-color: #cccccc;
-  height: fit-content;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,6 +235,22 @@
 
 
 
+.huskermovers {
+
+  left: 20%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 50;
+    float: left;
+     position: relative;
+     width: 30%; 
+     height:100%;
+     background-color: 	rgb(245,245,245,0.1) ;
+}
 
 
 

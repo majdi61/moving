@@ -71,59 +71,54 @@
 		</div>
 	</header>
 
-	<div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-02.png');padding-bottom: 10px ;">
-		<div class="huskermovers" style="left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); text-align: center;z-index: 50;float: left;position: relative;width: 60%; height:fit-content;background-color: 	rgb(245,245,245,0.2) ; ">
+	<div class="hero-image">
+		<div class="huskermovers" >
         
       
 
       <div class="container-contact100">
 
         <div class="wrap-contact100">
-          <form class="contact100-form validate-form">
+          <form class="contact100-form validate-form" id='myform'>
             
             
-            <div class="wrap-input100 validate-input"style="width: 47%; margin-left:1%; margin-right: 1%;" >
+            <div class="wrap-input100 validate-input" >
               <input class="input100" type="date" name="phone" placeholder="Moving Date" style="padding-right: 15px;" id="date">
               <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;" >
+            <div class="wrap-input100 validate-input" >
               <input class="input100" type="text" name="phone" placeholder="Sizes" id="sizes">
               <span class="focus-input100"></span>
             </div>
     
-            <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;" >
+            <div class="wrap-input100 validate-input" >
               <input class="input100" type="text" name="name" placeholder="First Name" id="firstname">
               <span class="focus-input100"></span>
             </div>
     
-            <div class="wrap-input100 validate-input" style="width: 47%; margin-left:1%; margin-right: 1%;">
+            <div class="wrap-input100 validate-input" ">
               <input class="input100" type="text" name="email" placeholder="Last Name" id="lastname">
               <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 validate-input"  >
+            <div class="wrap-input101 validate-input"  >
               <input class="input100" type="text" name="phone" placeholder="Origin Adress/ Postal Code" id="origin-adress">
               <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 validate-input" >
+            <div class="wrap-input101 validate-input" >
               <input class="input100" type="text" name="phone" placeholder="Destination Adress / Zip Code" id="destination-adress">
               <span class="focus-input100"></span>
             </div>
     
-            <div class="wrap-input100 validate-input"  style="width: 47%; margin-left:1%; margin-right: 1%;  ">
+            <div class="wrap-input100 validate-input"    >
               <input class="input100" type="text" name="phone" placeholder="Phone Number" id="phone">
               <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 validate-input"  style="width: 47%; margin-left:1%; margin-right: 1%;">
+            <div class="wrap-input100 validate-input"  >
               <input class="input100" type="text" name="phone" placeholder="Email" id="email">
               <span class="focus-input100"></span>
             </div>
     
-            <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+            <div class="wrap-input101 validate-input" data-validate = "Please enter your message">
               <textarea class="input100" name="message" placeholder="Description" id="description"></textarea>
               <span class="focus-input100"></span>
             </div>
@@ -214,6 +209,9 @@
   </body>
 
   <style>
+    html,body{
+      height: 100%;
+    }
 
 .hero-image {
 	float: left;
@@ -224,8 +222,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+   height: 100%;
   width: 100%;
+
+  display: inline-block; 
+   background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86)
+   , url('assets/images/WEB-02.png');
+   padding-bottom: 10px ;
+}
+
+
+.huskermovers {
+  left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); 
+    text-align: center;
+    z-index: 50;
+    float: left;
+    position: relative;
+    width: 60%; 
+    height:fit-content;
+    background-color: 	rgb(245,245,245,0.2) ; 
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -348,14 +368,26 @@ iframe {
 /*------------------------------------------------------------------
 [ Input ]*/
 
-.wrap-input100 {
-  width: 97%;
+.wrap-input101 {
+  width: 96%;
   display:inline-block;
   background-color: #fff;
   border-radius: 31px;
   margin-bottom: 10px;
   position: relative;
-  
+  margin-left:1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+.wrap-input100 {
+  width: 47%;
+  display:inline-block;
+  background-color: #fff;
+  border-radius: 31px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left:1%;
+  margin-right: 1%;
   z-index: 1;
 }
 

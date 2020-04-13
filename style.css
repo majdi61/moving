@@ -393,11 +393,13 @@ a:focus,
 	font-weight: bold;
 	text-transform: uppercase;
 	padding: 5px 10px;
-	border-radius: 10px;
+	
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	font-family: "Century Gothic";
+	border-bottom: transparent solid 1px;
+
 }
 
 
@@ -408,11 +410,21 @@ a:focus,
 	color: #fff;
 }
 
-.mu-navbar-nav li.active a,
-.mu-navbar-nav li a:hover,
-.mu-navbar-nav li a:focus {
+
+.mu-navbar-nav li.active a{
 	background-color: #851f78;
-	color: #fff;
+	border-radius: 10px;
+
+}
+
+
+.mu-navbar-nav li a:hover{
+
+
+	border-bottom: white solid 1px;
+	border-radius: 0%;
+
+	
 }
 
 
