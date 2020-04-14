@@ -190,19 +190,16 @@
 
 section {
   height: 100%;
-  -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  width: 40em;
-  height: 25em;
+  
+  width: 100%;
+ 
   margin: 0 auto;
   position: relative;
 }
 
 .list {
-  width: 500px;
+ 
+  width: 50%;
   height: 60vh;
   background: #333;
   display: inline-block;
@@ -210,6 +207,7 @@ section {
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   overflow: hidden;
+ left: 25%;
 }
 
 .list p {
@@ -263,7 +261,20 @@ span {
   top: 20em;
 }
 
-
+@media only screen and (max-width: 600px) {
+  .list {
+ 
+ width: 80%;
+ height: 55vh;
+ background: #333;
+ display: inline-block;
+ -webkit-transition: all .3s ease-in-out;
+ -moz-transition: all .3s ease-in-out;
+ transition: all .3s ease-in-out;
+ overflow: hidden;
+left: 0%;
+}
+}
 
   </style>
 
