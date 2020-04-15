@@ -50,6 +50,18 @@ html {
 /* HEADER */
 /*--------------------*/
 
+
+@media only screen and (max-width: 600px) {
+	.mu-navbar .mu-logo{
+		display: inline-block;
+		width: 70%;
+	}
+	.mu-logo img {
+		margin-top: -5px;
+		width: 100%;
+	}
+	
+  }
 #mu-hero {
 	background-color: #78de85;
 	display: inline;
@@ -1057,6 +1069,9 @@ html {
 	
 }
 
+/*Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
+
+
 .loader {
     position: fixed;
     z-index: 99;
@@ -1091,3 +1106,49 @@ html {
     border: 1px solid black;
     margin: 10px;
 }
+
+
+
+/*Majdiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+#husker-titre{
+	color: #f0f0f0;
+	font-family: Century Gothic;
+	font-size: 44px;
+	text-align: center;
+	display: block; 
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.soustitre{
+	display:block;color: #f5f5f5;
+	font-family: Century Gothic;
+	font-size: 27px;
+	 font-weight: bold;
+
+}
+.text{
+	color: #f5f5f5;font-family: Century Gothic;font-size: 24px;
+}
+.text-wrap {
+    text-align: justify;
+    margin: 20px 80px;
+  }
+
+@media only screen and (max-width: 600px) {
+
+	.huskermovers {
+		width: 90% !important;
+		padding: 1px !important ;
+		border-radius: 0% !important;
+  
+	  }
+
+	.text-wrap {
+      text-align: justify !important;
+      margin: 2px !important;
+
+
+    }
+  }

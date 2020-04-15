@@ -87,19 +87,19 @@
               <span class="focus-input100"></span>
             </div>
 
-            <div style="display: block;font-family: Century Gothic;font-weight: bold; padding-bottom: 20px; color: black;font-size: 12px;"  >FORGOT PASSWORD </div>
+            <div class="forget" >FORGOT PASSWORD </div>
 
-        <a href="index.html" >  <div style="display: block;font-family: Century Gothic;font-weight: bold; padding-bottom: 20px; color: black;font-size: 12px;" > SIGN UP NOW</div> </a>  
+        <a href="index.html" style="text-decoration: none;" >  <div class="forget" > SIGN UP NOW</div> </a>  
 
 
     
             <div class="container-contact100-form-btn" id="connected"  >
-              <button class="contact100-form-btn" onclick="login()" type="button" >
+             <a href="booknow.html" style="text-decoration: none; color: white !important;" class="contact100-form-btn" onclick="login()" type="button" >
                 <span style="font-weight: bold; font-family: Century Gothic ;">
                  
                   Login
                 </span>
-              </button>
+              </button></a>
             </div>
 
             
@@ -190,6 +190,10 @@
 
 html,body { height:100%; }
 
+
+.forget{
+  display: block;font-family: Century Gothic;font-weight: bold; padding-bottom: 5px; color: black;font-size: 12px;
+}
 .hero-image {
   display: inline-block; 
    background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-04.png');
@@ -534,6 +538,30 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+/*------------------------------------------------------------------
+[ Majdiiiiiiiii ]*/
+
+@media only screen and (max-width: 1200px) {
+  .huskermovers {
+    width: 50%;
+    left: 20%;
+    
+  }
+}
+@media only screen and (max-width: 600px) {
+  .huskermovers {
+    width: 80%;
+    left: 10%;
+    min-width: 80%;
+    
+  }
+}
+
+
+
+
+
 
 
   </style>
