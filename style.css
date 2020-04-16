@@ -186,8 +186,17 @@ body {
 .mu-navbar-nav li.active a{
 	background-color: #851f78;
 	border-radius: 10px;
+	
 
 }
+.mu-navbar-nav li.active a:hover{
+	background-color: #eb40d4;
+	border-radius: 10px;
+	border-bottom: transparent;
+	
+
+}
+
 
 
 .mu-navbar-nav li a:hover{
