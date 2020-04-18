@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: inherit; }
 
+  html,body{
+    height: 100%;
+  }
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
@@ -36,12 +39,13 @@ body {
   color: rgb(255, 255, 255); }
 
    .section-pricing {
-   
+    padding-bottom: 50px;
     background-image: linear-gradient(to right bottom, #1f304a86,#1f304a86),url("assets/images/WEB-04.jpg");
     background-position: center;
-    margin-top: 10rem;
-    height: 100vh;
+    height: 100%;
   background-size: cover;
+  float: left;
+  width: 100%;
   
  }
 
@@ -55,21 +59,24 @@ body {
     text-transform: uppercase; }
         
  .feature-box {
+   
     z-index: 50;
     float: left;
     position: relative; 
     left : 42%;
     width: 57%;
-     height: 99vh;
+     height: 100%;
       border: 1px solid #f5f5f5;
       background-color: 	rgb(245,245,245,0.5);
       border-style: hidden
  }           
       
  .feature__text-box {
+  transform: translate(-50%, 0%);
+   display:block;
     position: absolute;
-    top: 7%;
-    left: 29%;
+    padding-top: 15px;
+    left: 50%;
     text-align: center; }
     .feature__text-box-primar{
         color: #851F78;
@@ -247,6 +254,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 50px;
  
 }
 
