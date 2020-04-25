@@ -165,7 +165,7 @@ body {
 	text-transform: uppercase;
 	padding: 5px 10px;
 	text-decoration-line: none;
-	
+	border-radius: 10px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
@@ -201,9 +201,9 @@ body {
 
 .mu-navbar-nav li a:hover{
 
+	background-color: #851f78;
 
-	border-bottom: white solid 1px;
-	border-radius: 0%;
+	border-radius: 10px;
 
 	
 }
