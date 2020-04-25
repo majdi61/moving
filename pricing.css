@@ -101,6 +101,7 @@ body {
     
 
       .svg{
+        
         max-width: 30% ;
         
        }
@@ -205,6 +206,7 @@ body {
       
 
      }
+    
      .pricing-box__price{
       
       text-align: center;
@@ -222,6 +224,7 @@ margin: auto;
 .m{margin: 0rem;}
 .f{float: left;
   width: 20px;
+  margin-top: -5px;
 }
 .mb{
   margin-bottom: 20%;

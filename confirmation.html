@@ -57,7 +57,7 @@
             <li class="nav-item active"><a href="booknow.html">book now </a></li>
             <li class="nav-item"><a href="gallery.html">gallery </a></li>
             <li class="nav-item"><a href="contact.html">contact us </a></li>
-            <li class="nav-item active"><a href="login.html">client login</a> </li>
+            
 
           </ul>
         </div>
@@ -171,7 +171,7 @@
 
 
         <div style="width: 100%;   font-size: 1.5rem;">
-          <div class="price">Price : .....$ </div>
+          <div class="price">Price : We will contact you </div>
           <div classs="your">YOUR ORIGIN/DESTINATION ADDRESS IS MORE THAN ...... MILES</div>
           <div class="long"> Long distance move,
             please continue to your
@@ -180,7 +180,7 @@
           <div class="you"> You can also
             contact our office at :.
           </div>
-          <div class="xx"> xxxxxxxxx</div>
+          <div class="xx">206-946-5993</div>
 
         </div>
 
@@ -196,7 +196,12 @@
 
 
 
-    <button class="btn" type="submit">View Request Page</button>
+    <button class="btn" type="submit">  <a href="index.html" style="text-decoration: none; color: white !important;"  type="button" onclick="index()" >
+      
+        
+         Keep Moving
+       
+    </a> </button>
 
 
 
@@ -358,7 +363,7 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 50%;
-    height: 55px;
+    height: 54px;
     position: relative;
     ;
     background-color: #851f78;
@@ -369,6 +374,37 @@
     font-weight: bold;
     margin-top: 10px;
   }
+
+  .btn::before {
+ 
+    content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #851f78;
+  pointer-events: none;
+ 
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn:hover:before {
+  background-color: #eb40d4;
+  width: calc(100% + 20px);
+  height: calc(100% + 1px);
+}
 
 
   .price {
