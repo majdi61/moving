@@ -84,6 +84,7 @@ function signup() {
 
    var messagesRef = firebase.database().ref('booknow');
    function booknow() {
+     console.log("test")
 
     var date= document.getElementById("date").value;
     var sizes= document.getElementById ("sizes").value ;
@@ -124,7 +125,7 @@ function signup() {
       
    }
 
-   var messagesRef = firebase.database().ref('contactus');
+   var messagesRef = firebase.database().ref('booknow');
    function contact() {
 
 
