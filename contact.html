@@ -180,8 +180,18 @@
                   <textarea class="input100" name="message" placeholder="Message" id="message"></textarea>
                   <span class="focus-input100"></span>
                 </div>
+
+
+
+                <div class="rating"><!--
+                --><a href="#5" title="Donner 5 étoiles">☆</a><!--
+                --><a href="#4" title="Donner 4 étoiles">☆</a><!--
+                --><a href="#3" title="Donner 3 étoiles">☆</a><!--
+                --><a href="#2" title="Donner 2 étoiles">☆</a><!--
+                --><a href="#1" title="Donner 1 étoile">☆</a>
+             </div>
         
-                <div class="container-contact100-form-btn">
+                <div class="container-contact100-form-btn" style="display: block;">
                   <button class="contact100-form-btn" type="button" onclick="contact()">
                     <span style="font-weight: bold; font-family: Century Gothic ;">
                      
@@ -260,6 +270,31 @@
   </body>
 
   <style>
+.rating{-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  display: block;
+  width: fit-content;
+  height: 10px;
+}
+.rating a {
+   float: right;
+   color: #aaa;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+   color: orange;
+   cursor: pointer;
+}
     body,html{
       height: 100%;
     }
