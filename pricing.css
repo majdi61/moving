@@ -278,13 +278,13 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  min-width: 10px;
-  height: 40px;
+  min-width: 15px;
+  height: 45px;
   background-color: transparent;
   border-radius: 31px;
-  font-weight: 400;
-  
-  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  font-size: 1.2rem;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
