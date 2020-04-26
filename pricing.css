@@ -30,7 +30,15 @@ body {
 ::selection {
   background-color: #55c57a;
   color: #fff; }
+main{
+  height: 100%;
+  width: 100%;
+  float: left;
+  
 
+
+
+}
 body {
   font-family: "Century Gothic";
   font-weight: 400;
@@ -39,7 +47,7 @@ body {
   color: rgb(255, 255, 255); }
 
    .section-pricing {
-    padding-bottom: 50px;
+    
     background-image: linear-gradient(to right bottom, #1f304a86,#1f304a86),url("assets/images/WEB-04.jpg");
     background-position: center;
     height: 100%;
