@@ -51,7 +51,7 @@ body {
     
     @media only screen and (max-width: 56.25em) {
       .section-whyus {
-        padding: 25rem 0 15rem 0; } }
+        padding: 17rem 0 9rem 0; } }
   
     
    .row {
@@ -112,7 +112,17 @@ body {
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
      }
+     @media only screen and (max-width: 56.25em) {
+      .feature-box {
+        height: auto; } 
+      .svg{
+        max-width: 40%;
 
+      }
+      .feature-box__text{margin-top: 7%;}
+      .heading-tertiary{margin-top: 3%;}
+    }
+  
         
             
       
