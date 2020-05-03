@@ -11,7 +11,7 @@ html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 30%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -67,6 +67,13 @@ body {
       margin-bottom: -2rem;
       
      }
+     @media only screen and (max-width: 56.25em) {
+      .svg {
+        margin-bottom:-11rem ;
+       }
+      .icon{
+        margin-top: -13rem
+      } }
      .icon { text-align: center;}
 
 
@@ -203,4 +210,4 @@ body {
                     width: calc(100% + 20px);
                   }
                   
-            
+                           
