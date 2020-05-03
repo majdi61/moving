@@ -67,21 +67,21 @@
 
 	
   
-  <div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-08.jpg');padding-bottom: 10px ;">
-		<div class="huskermovers" style=" text-align: center;z-index: 50;float: left;position: relative;margin-left: 14em ;width: 80%; height: fit-content; border-radius: 5%;background-color: 	rgb(245,245,245,0.2) ; margin-top: 2rem ;margin-bottom: 2rem; padding-top: 3rem; padding-bottom: 3rem ">
-				<span id="husker-titre" style="color: #f0f0f0;font-family: Century Gothic;font-size: 44px; text-align: center;display: block; text-transform: uppercase; font-weight: bold;">
+  <div class="hero-image bg" >
+		<div class="huskermovers box" >
+				<span  class="box-title">
           PACKING SERVICES</span>
           
-          <div style="text-align: justify; margin: 20px 80px ;"> 
-				<span id="husker-soustitre" style="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400; "   > 
+          <div class="text-wrap"> 
+				<span id="husker-soustitre" class="box-text"   > 
 					Packing and unpacking can be the most tiresome part of moving. That is why we offer top-notch
           packing services in Washington state to reduce, or even altogether eliminate, the stress of moving.
           Our packing services are based on the same hourly rates as moving, plus the cost of packing supplies. If you’d like us to do all or part of your packing and/or unpacking, please let us know well in advance, since there is a high demand for our packing crews. 
          </span>
 
 
-          <span style="display:block;color: #f5f5f5;font-family: Century Gothic;font-size: 27px; font-weight: bold;"> -Full packing service: </span>
-                  <span id="husker-soustitre" style="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400; "   > 
+          <span class="soustitre"> -Full packing service: </span>
+                  <span id="husker-soustitre" class="box-text"  > 
                     Should you hire a full service crew? This is a decision you need to make based on time versus cost. A
                     packing service could add a couple hundred dollars to your moving budget. However, if you need
                     to take two weeks off work in order to get the house packed and organized, it may be worth the
@@ -90,15 +90,15 @@
                   </span>
 
 
-          <span style="display:block;color: #f5f5f5;font-family: Century Gothic;font-size: 27px; font-weight: bold;">-Special packing:</span>
-              <span id="husker-soustitre" style="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400; "   > 
+          <span class="soustitre">-Special packing:</span>
+              <span id="husker-soustitre" class="box-text"  > 
                 If you are on a budget or you want to lower the cost of your move, we also offer a service for packing
                 of only specialty fragile items, including kitchen, artwork, mirrors or other breakables or valuables. You
                 can also inquire about our crating services for extra valuable items. 
             
               </span>
 
-          <span style="display:-webkit-box;color: #f5f5f5;font-family: Century Gothic;font-size: 27px; font-weight: bold;">Packing Paper </span>
+          <span class="soustitre">Packing Paper </span>
          
 
           <table style="text-align: center; ">
@@ -206,7 +206,7 @@
 </tr>
             </tbody>
          </table>
-          <span style ="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;display: inline; ">We can help you estimate the size of your belongings and give you rates for budgeting purposes.
+          <span class="box-text">We can help you estimate the size of your belongings and give you rates for budgeting purposes.
             Learn more about our Washington state packing services and get your free quote today. Huskies Movers is a full service Washington state commercial 
             moving and relocation partner for
             leading Fortune 500 companies
@@ -221,7 +221,7 @@
 
 
 
-             <span style ="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;">Packing and Unpacking (We provide
+             <span class="box-text">Packing and Unpacking (We provide
               all the materials needed for proper
               packing and remove the used materials free of charge on the unpack).Flooring Replacement/Cleaning Moves –Huskies Movers Moving Company will professionally move out all the items for flooring replacement or cleaning and return the
               items when the work is completed. Donation to Goodwill, Consignment, or charity of
@@ -268,6 +268,19 @@
   </body>
 
   <style>
+.box{
+  text-align: center;z-index: 50;float: left;position: relative;margin-left: 14em ;width: 80%; height: fit-content; border-radius: 5%;background-color: 	rgb(245,245,245,0.2) ; margin-top: 2rem ;margin-bottom: 2rem;  padding-top: 3rem; padding-bottom: 3rem
+}
+.box-title{
+  color: #f0f0f0;font-family: Century Gothic;font-size: 3.5rem; text-align: center;display: block; text-transform: uppercase; font-weight: bold;
+}
+.box-text{
+  color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;
+}
+.box-sec{
+  text-align: justify; margin: 20px 80px ;
+}
+  .bg{display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-08.jpg');padding-bottom: 10px}
 
 .hero-image {
 	float: left;
@@ -287,9 +300,7 @@
 text-align: center;
 z-index: 50;
 position: relative;
-margin-left: auto;
-margin-right: auto;
-;
+
 width: 80%;
 height: fit-content;
 border-radius: 10%;
@@ -306,7 +317,7 @@ table {
 
   }
 th{
-  font-size: 12px;
+  font-size: 1.2rem;
   background-size: 100% 60% !important
 }
   
@@ -334,7 +345,7 @@ th {
   font-weight: bold;
   letter-spacing: 0.18px;
   width: 20%;
-  padding-bottom: 20px ;
+  padding-bottom: 27px ;
   padding-top: 20px;
   
 }
@@ -343,7 +354,7 @@ td{
  background-color: rgb(245,245,245,0.6);
  margin-right: 10px;
  border-radius: 10px;
- 
+ font-size: 1.5rem;
 
  
 
@@ -365,6 +376,39 @@ td{
   border-bottom-right-radius: 10px;
   
 }
+
+@media only screen and (max-width: 600px) {
+  .box{margin-left: 3em;}
+
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
 
 
   </style>

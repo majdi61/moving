@@ -64,14 +64,14 @@
 		</div>
 	</header>
 
-	<div class="hero-image" style="display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-06.jpg');padding-bottom: 10px ;">
-		<div class="huskermovers" style=" text-align: center;z-index: 50;float: left;position: relative;margin-left: 14em ;width: 80%; height:fit-content; border-radius: 5%;background-color: 	rgb(245,245,245,0.2) ; margin-top: 2rem ;margin-bottom: 2rem; padding-top: 3rem; padding-bottom: 3rem;">
-				<span id="husker-titre" style="color: #f0f0f0;font-family: Century Gothic;font-size: 44px; text-align: center;display: block; text-transform: uppercase; font-weight: bold;">
+	<div class="hero-image bg" >
+		<div class="huskermovers box" >
+				<span  class="box-title" >
           LOCAL MOVING</span>
           <div class="text-wrap"> 
           <span class="soustitre">GET THE BEST MOVING EXPERIENCE WITH THE HUSKIES!   </span>
 
-				<span id="husker-soustitre" style="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400; "   > 
+				<span id="husker-soustitre" class="box-text"   > 
           All moves that are fewer than 50 miles radius from Seattle are considered local move and based on
           an hourly rate. Each Move require a three hour minimum a travel fee depending on the pick up and
           drop off location.
@@ -83,16 +83,16 @@
               <span class="soustitre">Steps 1: </span>
 
 
-          <span style ="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;">Get a quick moving estimate on our website. This step takes less than 30 seconds and gets you in our
+          <span class="box-text">Get a quick moving estimate on our website. This step takes less than 30 seconds and gets you in our
             system, while providing you with estimate, based on database average for generally similar moves.
             or request a free in Home estimate</span>
             <span class="soustitre">Steps 2: </span>
 
-            <span style ="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;">Submit a completed request, so that we can provide you with a more accurate estimate and check
+            <span class="box-text">Submit a completed request, so that we can provide you with a more accurate estimate and check
               our availability for your move. We strive to send out all estimates within 24 hours. Please expect an additional day for all weekend requests. Once we update your information, and if the day is available.</span>
 
-            <span style="display:block;color: #f5f5f5;font-family: Century Gothic;font-size: 27px; font-weight: bold;">Steps 3: </span>
-            <span style ="color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;">Confirmation email if decided to book you will now have an option to confirm your request. To book
+            <span class="soustitre">Steps 3: </span>
+            <span class="box-text">Confirmation email if decided to book you will now have an option to confirm your request. To book
               a move with Huskies Movers LLC, you need to make a one-hour deposit and get an email confirmation from our office. This e-mail is important as it is proof of your reservation with us and also provides
               you with very important information regarding your move and the Huskies movers.</span></div>
 
@@ -134,6 +134,19 @@
   </body>
 
   <style>
+.box{
+  text-align: center;z-index: 50;float: left;position: relative;margin-left: 14em ;width: 80%; height: fit-content; border-radius: 5%;background-color: 	rgb(245,245,245,0.2) ; margin-top: 2rem ;margin-bottom: 2rem;  padding-top: 3rem; padding-bottom: 3rem
+}
+.box-title{
+  color: #f0f0f0;font-family: Century Gothic;font-size: 3.5rem; text-align: center;display: block; text-transform: uppercase; font-weight: bold;
+}
+.box-text{
+  color: #f5f5f5;font-family: Century Gothic;font-size: 2rem; font-weight: 400;
+}
+.box-sec{
+  text-align: justify; margin: 20px 80px ;
+}
+  .bg{display: inline-block;  background-image:linear-gradient(to right bottom, #1f304a86,#1f304a86), url('assets/images/WEB-06.jpg');padding-bottom: 10px}
 
 .hero-image {
 	float: left;
@@ -153,9 +166,7 @@
 text-align: center;
 z-index: 50;
 position: relative;
-margin-left: auto;
-margin-right: auto;
-;
+
 width: 80%;
 height: fit-content;
 border-radius: 10%;
@@ -164,6 +175,39 @@ margin-top: 20px;
 padding-bottom: 20px;
 
 }
+
+@media only screen and (max-width: 600px) {
+  .box{margin-left: 3em;}
+
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
 
 
   </style>
