@@ -143,6 +143,18 @@
 
 
   <script>
+
+function SubmitForm()
+{
+     document.forms['contactus'].action='action1.php';
+     document.forms['contactus'].target='frame_result1';
+     document.forms['contactus'].submit();
+
+     document.forms['contactus'].action='action2.php';
+     document.forms['contactus'].target='frame_result2';
+     document.forms['contactus'].submit();
+     return true;
+}
     window.addEventListener("load", function () {
      const loader = document.querySelector(".loader");
      loader.className += " hidden"; // class "loader hidden"
