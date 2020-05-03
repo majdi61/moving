@@ -28,7 +28,9 @@
 
 </head>
 
-<body>
+<body onload="pass()">
+ 
+ 
 
   <!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
   <div class="loader" style="background-color: #78DE85;">
@@ -104,13 +106,12 @@
 
             <tr>
               <td class="tabb">Moving From:</td>
-              <td class="tabr">1525 9th ave,Seattle,WA
-                98105</td>
+              <td class="tabr" id="originadresse"></td>
 
             </tr>
             <tr>
               <td class="tabb"> Moving To: </td>
-              <td class="tabr"> 105 Harvard Ave E,Seattle,WA 98105 </td>
+              <td class="tabr" id="destinationadress"></td>
 
             </tr>
             <tr>
@@ -155,8 +156,8 @@
 
 
           <tr>
-            <td class="tabb">Desired Move Date: </td>
-            <td class="tabr">Tuesday, Oct 22, 2019</td>
+            <td class="tabb" >Desired Move Date: </td>
+            <td class="tabr" id="date"></td>
 
           </tr>
           <tr>
@@ -165,12 +166,15 @@
 
           </tr>
           <tr>
-            <td class="tabb"> Size Of Move:
+            <td class="tabb">
+             Size Of Move:
             </td>
-            <td class="tabr">Studio Apartment </td>
+            <td class="tabr" id="size"></td>
+            
 
           </tr>
         </table>
+
 
 
         <div style="width: 100%;   font-size: 1.5rem;">
@@ -215,6 +219,34 @@
 
 
   <script>
+    function pass (){
+    var url_string = window.location.href; //window.location.href
+var url = new URL(url_string);
+var size = url.searchParams.get("size");
+var date = url.searchParams.get("date");
+
+var originadresse = url.searchParams.get("originadresse");
+
+var destinationadress = url.searchParams.get("destinationadress");
+
+console.log(size);
+console.log(date);
+console.log(originadresse);
+console.log(destinationadress);
+document.getElementById('size').innerHTML = size;
+document.getElementById('date').innerHTML = date;
+
+document.getElementById('originadresse').innerHTML = originadresse;
+
+document.getElementById('destinationadress').innerHTML = destinationadress;
+
+
+
+
+}
+
+
+
     window.addEventListener("load", function () {
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; // class "loader hidden"
