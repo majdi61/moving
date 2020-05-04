@@ -33,7 +33,6 @@
   	<!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
     <div class="loader" style="background-color: #78DE85;">
       <img src="assets/images/load.png" alt="Loading..."  style="min-width: 35rem;"/>
-      <div style="float:inline-end; text-align: center; color: white;"> credit : tawalab ®️</div>
     </div>
   		<!-- Loadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer-->
   	
@@ -91,7 +90,7 @@
       <div class="huskermoversc box" >
         
         <div class="box-title">HOURS OF OPERATION</div>
-        <div class="box-title">Available : </div>
+        <div class="box-info">Available : </div>
         
        
         <div class="box-info">Monday - Friday 8 a.m. - 7 p.m.</div>
@@ -151,30 +150,31 @@
           <div class="container-contact100">
     
             <div class="wrap-contact100">
-              <form class="contact100-form validate-form" id='myform'>
+              <form class="contact100-form validate-form" id='myform' action="https://us-central1-huskie-532c0.cloudfunctions.net/sendMail2" method="GET">
                 
                 <div style="font-size: 3rem;    color: #78de85; text-align: center;
                 " > CONTACT HUSKIES MOVERS TODAY!</div>
             
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your phone" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-                  <input class="input100" type="text" name="phone" placeholder="Full Name" id="fullname">
+                  <input class="input100" type="text" name="fullname" placeholder="Full Name" id="fullname">
                   <span class="focus-input100">test</span>
                 </div>
         
                 <div class="wrap-input100 validate-input" data-validate="Please enter your name" style="width: 47%; margin-left:1%; margin-right: 1%;" >
-                  <input class="input100" type="text" name="name" placeholder="How Did You Hear About Us ?" id="how">
+                  <input class="input100" type="text" name="how" placeholder="How Did You Hear About Us ?" id="how">
                   <span class="focus-input100"></span>
                 </div>
         
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x" style="width: 47%; margin-left:1%; margin-right: 1%;">
-                  <input class="input100" type="text" name="email" placeholder="Phone" id="phone">
+                  <input class="input100" type="text" name="phone" placeholder="Phone" id="phone">
                   <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate = "Please enter your phone" style="width: 47%; margin-left:1%; margin-right: 1%;">
-                  <input class="input100" type="text" name="phone" placeholder="Email" id="email">
+                  <input class="input100" type="text" name="email" placeholder="Email" id="email">
                   <span class="focus-input100"></span>
                 </div>
                
+
         
               
                
@@ -184,18 +184,18 @@
                   <span class="focus-input100"></span>
                 </div>
 
-
+                  <input id="etoile" name="etoile" style="display: none;">   
 
                 <div class="rating"><!--
-                --><a href="#5" title="Donner 5 étoiles">☆</a><!--
-                --><a href="#4" title="Donner 4 étoiles">☆</a><!--
-                --><a href="#3" title="Donner 3 étoiles">☆</a><!--
-                --><a href="#2" title="Donner 2 étoiles">☆</a><!--
-                --><a href="#1" title="Donner 1 étoile">☆</a>
+                --><a  title="Donner 5 étoiles" onclick="document.getElementById('etoile').value = 5;console.log(etoile)">☆</a><!--
+                --><a  title="Donner 4 étoiles" onclick="document.getElementById('etoile').value = 4;console.log(etoile)">☆</a><!--
+                --><a  title="Donner 3 étoiles" onclick="document.getElementById('etoile').value = 3;console.log(etoile)">☆</a><!--
+                --><a  title="Donner 2 étoiles" onclick="document.getElementById('etoile').value = 2;console.log(etoile)">☆</a><!--
+                --><a  title="Donner 1 étoiles"  onclick="document.getElementById('etoile').value = 1;console.log(etoile)">☆</a>
              </div>
         
                 <div class="container-contact100-form-btn" style="display: block;">
-                  <button class="contact100-form-btn" type="button" onclick="contact()">
+                  <button class="contact100-form-btn" type="submit" >
                     <span style="font-weight: bold; font-family: Century Gothic ;">
                      
                       SUBMIT
