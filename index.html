@@ -96,6 +96,16 @@
         <div class="wrap-contact100">
           <form class="contact100-form validate-form">
 
+
+            <div class="container-contact100-form-btn fir">
+              <a href="booknow.html" style="text-decoration: none;">   <button class="contact100-form-btn" type="button" >
+                   <span style="font-weight: bold; font-family: Century Gothic ;">
+   
+                     BOOK NOW
+                   </span>
+                 </button></a>
+               </div>
+
             <div class="sign " > BOOK OUR SERVICES NOW</div>
 
             <div class="recive" >Enjoy The Best Moving Experience</div>
@@ -106,7 +116,7 @@
 
 
 
-            <div class="container-contact100-form-btn">
+            <div class="container-contact100-form-btn sec">
            <a href="booknow.html" style="text-decoration: none;">   <button class="contact100-form-btn" type="button" >
                 <span style="font-weight: bold; font-family: Century Gothic ;">
 
@@ -196,6 +206,10 @@
 </body>
 
 <style>
+  .fir{
+    display: none !important;
+
+  }
 
 *::after,
 *::before {
@@ -204,6 +218,7 @@
   box-sizing: inherit; }
 
 html {
+  height: 100%;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -216,6 +231,7 @@ html {
       font-size: 75%; } }
 
 body {
+  height: 100%;
   box-sizing: border-box;
   padding: 0rem; }
   @media only screen and (max-width: 56.25em) {
@@ -685,14 +701,29 @@ padding-top: 8%;
   }
 
   @media only screen and (max-width: 600px) {
+
+    .sec{
+      display: none !important;
+
+    }
+
+    .fir{
+        position: relative;
+        margin-left: 0 auto;
+        left: 30%;
+      display:block !important;
+    }
+    .hero-image{
+      height: 100%;
+    }
     
     .wrap-contact100{
-      margin-left: 3%;
-     padding-top: 74%;
-     padding-left: 25%;
+      margin-left: 0%;
+  
+     padding-left: 0%;
     }
     .container-contact100{
-      width: 80%;
+      width: 100%;
       padding: 0%;
     }
     .huskermoversi {
@@ -704,6 +735,7 @@ padding-top: 8%;
     }
 
     .huskermovers2 {
+      text-align: center;
       padding-top: 0%;
 
       width: 100%;
@@ -713,15 +745,15 @@ padding-top: 8%;
     .sign {
         color: #78de85;
         font-family: Century Gothic;
-        font-size: 2rem;
+        font-size: 3rem;
         display: block;
-        width: 25rem;
+        width: 100%;
         font-weight: 700;
       }
     .recive {
-        color: #78de85;
+        color: #ffffff;
         font-family: Century Gothic;
-        font-size: 1.5rem;
+        font-size:3rem;
         display: block;
         padding-bottom: 20px
       }
