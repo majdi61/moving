@@ -211,3 +211,17 @@ body {
                   }
                   
                            
+                  @media only screen and (max-width: 37.5em) {
+                    .row [class^="col-"]:not(:last-child) {
+                      margin-right: 4px;
+                      margin-bottom: 15rem;
+                     }
+                  .services-box{
+                    padding: 1.5rem;
+                    height: 36vh;
+                  }
+                  .contact100-form-btn{
+                    height: 24px;
+                  }
+                  }
+                  
