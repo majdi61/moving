@@ -189,12 +189,12 @@
 
                   <input id="etoile" name="etoile" style="display: none;">   
 
-                <div class="rating"><!--
-                --><a  title="Donner 5 étoiles" onclick="document.getElementById('etoile').value = 5;console.log(etoile)">☆</a><!--
-                --><a  title="Donner 4 étoiles" onclick="document.getElementById('etoile').value = 4;console.log(etoile)">☆</a><!--
-                --><a  title="Donner 3 étoiles" onclick="document.getElementById('etoile').value = 3;console.log(etoile)">☆</a><!--
-                --><a  title="Donner 2 étoiles" onclick="document.getElementById('etoile').value = 2;console.log(etoile)">☆</a><!--
-                --><a  title="Donner 1 étoiles"  onclick="document.getElementById('etoile').value = 1;console.log(etoile)">☆</a>
+                <div class="rating"><!--☆
+                --><a  title="Donner 5 étoiles" onclick="document.getElementById('etoile').value = 5;console.log(etoile)"><img id="et5" src="assets/images/etoilev.png" alt="" onclick="et(5)"></a><!--
+                --><a  title="Donner 4 étoiles" onclick="document.getElementById('etoile').value = 4;console.log(etoile)"><img id="et4" src="assets/images/etoilev.png" alt="" onclick="et(4)"></a><!--
+                --><a  title="Donner 3 étoiles" onclick="document.getElementById('etoile').value = 3;console.log(etoile)"><img id="et3" src="assets/images/etoilev.png" alt="" onclick="et(3)"></a><!--
+                --><a  title="Donner 2 étoiles" onclick="document.getElementById('etoile').value = 2;console.log(etoile)"><img id="et2" src="assets/images/etoilev.png" alt="" onclick="et(2)"></a><!--
+                --><a  title="Donner 1 étoiles" onclick="document.getElementById('etoile').value = 1;console.log(etoile)"><img id="et1" src="assets/images/etoilev.png" alt="" onclick="et(1)"></a>
              </div>
         
                 <div class="container-contact100-form-btn" style="display: block;">
@@ -218,7 +218,31 @@
     
 
   </div>
+  <script>
+  function et(k) 
+  {   
+    
+          for( let d = 5; d > k-1; d--){
+            document.getElementById('et'+d).src="assets/images/etoilev.png"
+            console.log("test",d)
+          }
+         
+         
+          for (let step = 1; step < k+1; step++){
+          document.getElementById('et'+step).src="assets/images/etoile.png"
+         
+        }
+
+      
+
+    }
   
+
+
+
+
+
+  </script>
   
 
 
