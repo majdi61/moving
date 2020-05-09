@@ -54,8 +54,13 @@ html {
     src: url('./assets/fonts/CenturyGothic.eot') format('eot'),
 		url('./assets/fonts/CenturyGothic.woff') format('woff'),
         url('./assets/fonts/CenturyGothic.ttf') format('truetype'),
-        url('./assets/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
-    font-weight: normal;
+		url('./assets/fonts/CenturyGothic.svg#CenturyGothic') format('svg')
+		url('./assets/fonts/CenturyGothic-Bold.eot') format('eot'),
+		url('./assets/fonts/CenturyGothic-Bold.woff') format('woff'),
+        url('./assets/fonts/CenturyGothic-Bold.ttf') format('truetype'),
+		url('./assets/fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+	font-weight: normal;
+	font-weight: bold;
     font-style: normal;
 }
 
