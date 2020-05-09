@@ -198,7 +198,7 @@ body {
     .pricing-box {
       width: 100%; 
       min-height: 55vh;
-   
+   height: auto;
      
       background-color: #FFFCFC;
       font-size: 1.5rem;
@@ -329,9 +329,7 @@ iframe {
 }
 
 @media only screen and (max-width: 1024px)and ( max-height :1370px) {
-  .pricing-box{
-    min-height: 40vh;
-  }
+  
 
   .feature-box {
    left: 35%;
@@ -363,9 +361,7 @@ margin: 130px -1rem;}
     }
 } 
 @media only screen and (max-width: 1024px) and (max-height: 1024px) {
-  .pricing-box{
-    height: 30vh;
-  }
+ 
 
   .feature-box {
    left: 35%;
@@ -399,10 +395,7 @@ margin: 130px -1rem;}
 
 
 @media only screen and (max-width: 480px)  and ( max-height: 840px ) {
-  .pricing-box{
-    height: 50vh;
-  }
-
+  
   .feature-box {
    left: 0%;
 
@@ -439,10 +432,7 @@ margin: 130px -1rem;}
 
 
 @media only screen and (max-width: 480px)  and ( max-height: 840px ) {
-  .pricing-box{
-    height: 50vh;
-  }
-
+ 
   .feature-box {
    left: 0%;
 
@@ -486,10 +476,7 @@ margin: 130px -1rem;}
         margin-top: 8%;
       
   }
-  .pricing-box{
-    height: 42vh;
-  }
-
+ 
 
   .feature-box {
    left: 0%;
@@ -538,4 +525,9 @@ margin: 130px -1rem;}
 .pricing-box{
   height: auto;
 }}
+@media only screen and (max-width: 340px){
+  main{
+    height: auto;
+  }
+}
 
