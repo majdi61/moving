@@ -48,7 +48,7 @@ body {
 
    .section-pricing {
     
-    background-image: linear-gradient(to right bottom, #1f304a86,#1f304a86),url("assets/images/WEB-04.jpg");
+    background-image:url("assets/images/WEB-04.jpg");
     background-position: center;
     height: 100%;
   background-size: cover;

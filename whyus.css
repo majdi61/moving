@@ -41,7 +41,7 @@ body {
 .icon { text-align: center;}
    .section-whyus {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, #1f304a86,#1f304a86),url("assets/images/WEB-03.jpg");
+    background-image: url("assets/images/WEB-03.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
